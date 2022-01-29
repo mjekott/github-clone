@@ -5,7 +5,7 @@ import Tabs from "./components/Tabs";
 
 function App() {
   return (
-    <div className="text-gray-900 text-sm antialiased">
+    <div className="text-gray-900 bg-gray-800 text-sm antialiased min-h-screen">
       <Header />
       <Stats />
       <Tabs />
