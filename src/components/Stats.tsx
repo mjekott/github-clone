@@ -25,7 +25,7 @@ const Stats = () => {
         </div>
       </div>
       <div className="flex space-x-2 text-gray-300 ">
-        <div className="border border-gray-400 bg-gray-700 rounded  px-3 py-1 flex items-center  cursor-pointer">
+        <div className="border border-gray-700 bg-githublight hover:bg-gray-700 rounded  px-3 py-1 flex items-center  cursor-pointer">
           <svg
             className="h3 w-4 fill-current mr-1"
             height="16"
@@ -35,7 +35,7 @@ const Stats = () => {
           </svg>
           <span>Pin</span>
         </div>
-        <div className="border border-gray-400 bg-gray-700 rounded  px-3 py-1  flex items-center space-x-1  cursor-pointer">
+        <div className="border border-gray-700 bg-githublight hover:bg-gray-700 rounded  px-3 py-1  flex items-center space-x-1  cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-4 w-4"
@@ -68,14 +68,14 @@ const Stats = () => {
             stroke="currentColor"
           >
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="M19 9l-7 7-7-7"
             />
           </svg>
         </div>
-        <div className="border text-gray-400 border-gray-400 bg-gray-700 rounded  px-3 py-1  flex items-center space-x-2 cursor-pointer">
+        <div className="border text-gray-500 border-gray-700 bg-githublight hover:bg-gray-700 rounded  px-3 py-1  flex items-center space-x-2 cursor-pointer">
           <svg
             aria-hidden="true"
             className="h-4 w-4 fill-current"
@@ -88,7 +88,7 @@ const Stats = () => {
             0
           </span>
         </div>
-        <div className="border text-gray-400 border-gray-400 bg-gray-700 rounded flex items-center cursor-pointer ">
+        <div className="border text-gray-400 border-gray-700 bg-githublight hover:bg-gray-700 rounded flex items-center cursor-pointer ">
           <div className="flex px-3 items-center space-x-2  py-1 ">
             <svg
               className="h-4 w-4 fill-current mr-1"
