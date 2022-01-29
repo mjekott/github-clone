@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <nav className="bg-gray-900 text-white px-4 py-3 flex items-center justify-between">
+    <nav className="bg-gray-700 text-white px-6 py-3 flex items-center justify-between">
       <div className="flex items-center space-x-4 ">
         <a href="#" className="text-white hover:text-gray-400">
           <svg className="w-8 fill-current" viewBox="0 0 16 16" version="1.1">
@@ -15,7 +15,7 @@ const Header = () => {
         <div className="relative">
           <input
             type="search"
-            className="rounded bg-gray-800 placeholder-gray-100 w-72 px-3 py-1 focus:w-96 focus:outline-none transition-all duration-200 ease-in"
+            className="rounded bg-gray-900 placeholder-gray-100 w-72 px-3 py-1 focus:w-96 focus:outline-none transition-all duration-200 ease-in"
             placeholder="Search or jump to..."
           />
           <div className="absolute top-0 right-0 flex items-center h-full">
