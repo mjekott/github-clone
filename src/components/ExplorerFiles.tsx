@@ -30,7 +30,7 @@ const ExplorerFiles = () => {
           </button>
           <a
             href="/"
-            className="flex items-center px-4 py-1 group transition ease-out duration-150 rounded"
+            className="hidden lg:flex items-center px-4 py-1 group transition ease-out duration-150 rounded"
           >
             <svg
               className="fill-current group-hover:text-blue-400 h-4 w-4 mr-1.5"
@@ -48,7 +48,7 @@ const ExplorerFiles = () => {
           </a>
           <a
             href="/"
-            className="flex items-center px-4 py-1 group transition ease-out duration-150 rounded"
+            className="hidden lg:flex items-center px-4 py-1 group transition ease-out duration-150 rounded"
           >
             <svg
               className="fill-current group-hover:text-blue-400 h-4 w-4 mr-1.5"
@@ -65,7 +65,7 @@ const ExplorerFiles = () => {
             <span>Tags</span>
           </a>
         </div>
-        <div className="flex space-x-2">
+        <div className=" hidden lg:flex space-x-2">
           <button className="flex items-center px-4 py-1 space-x-2 bg-githublight border border-githublight hover:bg-gray-700 transition ease-out duration-150 rounded">
             <span className="text-md">Go to file</span>
             <svg
@@ -118,8 +118,13 @@ const ExplorerFiles = () => {
             </svg>
           </button>
         </div>
+        <div className="flex lg:hidden">
+          <button className="flex items-center justify-center w-16 py-1 bg-githublight border border-githublight hover:bg-gray-700 transition ease-out duration-150 rounded">
+            <span className="text-md -translate-y-1">...</span>
+          </button>
+        </div>
       </div>
-      <div className="flex flex-col mt-2 border border-gray-700 border-t-0 border-b-0 rounded-md rounded-b-none ">
+      <div className="flex flex-col mt-2 border border-gray-700 border-t-0 border-b-0 rounded-md rounded-b-none  ">
         <div className="flex items-center justify-between bg-githublight rounded-md rounded-b-none  px-4 py-2">
           <div className="flex items-center space-x-2">
             <img
@@ -133,18 +138,30 @@ const ExplorerFiles = () => {
             <a href="/" className="font-bold text-gray-300 hover:underline">
               mjekott
             </a>
-            <a href="/" className="text-gray-400  text-xs    hover:underline ">
+            <a
+              href="/"
+              className="text-gray-400 hidden lg:flex text-xs hover:underline "
+            >
               Fixing navbar
             </a>
           </div>
           <div className="flex space-x-2 items-center text-gray-500">
-            <a href="/" className="hover:text-blue-400 hover:underline">
+            <a
+              href="/"
+              className="hover:text-blue-400 hidden lg:flex  hover:underline"
+            >
               ddefca1
             </a>
-            <a href="/" className="hover:text-blue-400 hover:underline">
+            <a
+              href="/"
+              className="hover:text-blue-400 hidden lg:flex  hover:underline"
+            >
               on Jan 28,2021
             </a>
-            <a href="/" className="flex items-center group font-mono ">
+            <a
+              href="/"
+              className="items-center hidden lg:flex  group font-mono "
+            >
               <svg
                 className="fill-current mr-1 text-gray-300 group-hover:text-blue-400"
                 height="16"
@@ -159,6 +176,24 @@ const ExplorerFiles = () => {
                 46
               </span>
               <span>commits</span>
+            </a>
+            <a
+              href="/"
+              className=" items-center flex lh:hidden   group font-mono "
+            >
+              <span className="mr-1 text-gray-300 group-hover:text-blue-400">
+                1 day ago
+              </span>
+              <svg
+                className="fill-current text-gray-300 group-hover:text-blue-400"
+                height="16"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z"
+                ></path>
+              </svg>
             </a>
           </div>
         </div>
@@ -178,171 +213,11 @@ const ExplorerFiles = () => {
           </div>
           <a
             href="/"
-            className="w-6/12 truncate hover:underline hover:text-blue-400"
+            className="hidden lg:flex w-6/12 truncate hover:underline hover:text-blue-400"
           >
             Project setup
           </a>
-          <div className="w-2/12 text-right">5 months ago</div>
-        </div>
-        <div className="flex justify-between items-center px-4 py-2 hover:bg-githublight">
-          <div className="flex w-4/12  ">
-            <svg className="fill-current h-4 w-4 mr-4">
-              <path
-                fill-rule="evenodd"
-                d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z"
-              ></path>
-            </svg>
-            <a href="/" className="hover:underline hover:text-blue-400">
-              src
-            </a>
-          </div>
-          <a
-            href="/"
-            className="w-6/12 truncate hover:underline hover:text-blue-400"
-          >
-            Fixing navbar
-          </a>
-          <div className="w-2/12 text-right">1 day ago</div>
-        </div>
-        <div className="flex justify-between items-center px-4 py-2 hover:bg-githublight">
-          <div className="flex w-4/12  ">
-            <svg className="fill-current h-4 w-4 mr-4">
-              <path
-                fill-rule="evenodd"
-                d="M1.75 1A1.75 1.75 0 000 2.75v10.5C0 14.216.784 15 1.75 15h12.5A1.75 1.75 0 0016 13.25v-8.5A1.75 1.75 0 0014.25 3h-6.5a.25.25 0 01-.2-.1l-.9-1.2c-.33-.44-.85-.7-1.4-.7h-3.5z"
-              ></path>
-            </svg>
-            <a href="/" className="hover:underline hover:text-blue-400">
-              test
-            </a>
-          </div>
-          <a
-            href="/"
-            className="w-6/12 truncate hover:underline hover:text-blue-400"
-          >
-            feat:testing header component
-          </a>
-          <div className="w-2/12 text-right">1 months ago</div>
-        </div>
-        <div className="flex justify-between items-center px-4 py-2 hover:bg-githublight">
-          <div className="flex w-4/12  ">
-            <svg className="fill-current h-4 w-4 mr-4">
-              <path
-                fill-rule="evenodd"
-                d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"
-              ></path>
-            </svg>
-            <a href="/" className="hover:underline hover:text-blue-400">
-              .eslintrc.js
-            </a>
-          </div>
-          <a
-            href="/"
-            className="w-6/12 truncate hover:underline hover:text-blue-400"
-          >
-            Project setup
-          </a>
-          <div className="w-2/12 text-right">1 months ago</div>
-        </div>
-        <div className="flex justify-between items-center px-4 py-2 hover:bg-githublight">
-          <div className="flex w-4/12  ">
-            <svg className="fill-current h-4 w-4 mr-4">
-              <path
-                fill-rule="evenodd"
-                d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"
-              ></path>
-            </svg>
-            <a href="/" className="hover:underline hover:text-blue-400">
-              .gitignore
-            </a>
-          </div>
-          <a
-            href="/"
-            className="w-6/12 truncate hover:underline hover:text-blue-400"
-          >
-            Project setup
-          </a>
-          <div className="w-2/12 text-right">1 months ago</div>
-        </div>
-        <div className="flex justify-between items-center px-4 py-2 hover:bg-githublight">
-          <div className="flex w-4/12  ">
-            <svg className="fill-current h-4 w-4 mr-4">
-              <path
-                fill-rule="evenodd"
-                d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"
-              ></path>
-            </svg>
-            <a href="/" className="hover:underline hover:text-blue-400">
-              .prettierrc
-            </a>
-          </div>
-          <a
-            href="/"
-            className="w-6/12 truncate hover:underline hover:text-blue-400"
-          >
-            Project setup
-          </a>
-          <div className="w-2/12 text-right">1 months ago</div>
-        </div>
-        <div className="flex justify-between items-center px-4 py-2 hover:bg-githublight">
-          <div className="flex w-4/12  ">
-            <svg className="fill-current h-4 w-4 mr-4">
-              <path
-                fill-rule="evenodd"
-                d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"
-              ></path>
-            </svg>
-            <a href="/" className="hover:underline hover:text-blue-400">
-              package.json
-            </a>
-          </div>
-          <a
-            href="/"
-            className="w-6/12 truncate hover:underline hover:text-blue-400"
-          >
-            Project setup
-          </a>
-          <div className="w-2/12 text-right">1 months ago</div>
-        </div>
-        <div className="flex justify-between items-center px-4 py-2 hover:bg-githublight">
-          <div className="flex w-4/12  ">
-            <svg className="fill-current h-4 w-4 mr-4">
-              <path
-                fill-rule="evenodd"
-                d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"
-              ></path>
-            </svg>
-            <a href="/" className="hover:underline hover:text-blue-400">
-              package-lock.json
-            </a>
-          </div>
-          <a
-            href="/"
-            className="w-6/12 truncate hover:underline hover:text-blue-400"
-          >
-            Project setup
-          </a>
-          <div className="w-2/12 text-right">1 months ago</div>
-        </div>
-        <div className="flex justify-between items-center px-4 py-2 hover:bg-githublight">
-          <div className="flex w-4/12  ">
-            <svg className="fill-current h-4 w-4 mr-4">
-              <path
-                fill-rule="evenodd"
-                d="M3.75 1.5a.25.25 0 00-.25.25v11.5c0 .138.112.25.25.25h8.5a.25.25 0 00.25-.25V6H9.75A1.75 1.75 0 018 4.25V1.5H3.75zm5.75.56v2.19c0 .138.112.25.25.25h2.19L9.5 2.06zM2 1.75C2 .784 2.784 0 3.75 0h5.086c.464 0 .909.184 1.237.513l3.414 3.414c.329.328.513.773.513 1.237v8.086A1.75 1.75 0 0112.25 15h-8.5A1.75 1.75 0 012 13.25V1.75z"
-              ></path>
-            </svg>
-            <a href="/" className="hover:underline hover:text-blue-400">
-              tsconfig.json
-            </a>
-          </div>
-          <a
-            href="/"
-            className="w-6/12 truncate hover:underline hover:text-blue-400"
-          >
-            Project setup
-          </a>
-          <div className="w-2/12 text-right">1 months ago</div>
+          <div className="w-4/12 lg:w-2/12 text-right">5 months ago</div>
         </div>
       </div>
     </>

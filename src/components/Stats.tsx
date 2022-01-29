@@ -2,7 +2,7 @@ import React from "react";
 
 const Stats = () => {
   return (
-    <div className=" px-6 py-4 flex items-center justify-between">
+    <div className=" px-6 py-4 flex flex-col lg:flex lg:flex-row lg:items-center lg:justify-between">
       <div className="flex">
         <svg
           aria-hidden="true"
@@ -25,7 +25,7 @@ const Stats = () => {
         </div>
       </div>
       <div className="flex space-x-2 text-gray-300 ">
-        <div className="border border-gray-700 bg-githublight hover:bg-gray-700 rounded  px-3 py-1 flex items-center  cursor-pointer">
+        <div className="border border-gray-700 bg-githublight hover:bg-gray-700 rounded  px-3 py-1 hidden lg:flex items-center   cursor-pointer">
           <svg
             className="h3 w-4 fill-current mr-1"
             height="16"
@@ -35,7 +35,7 @@ const Stats = () => {
           </svg>
           <span>Pin</span>
         </div>
-        <div className="border border-gray-700 bg-githublight hover:bg-gray-700 rounded  px-3 py-1  flex items-center space-x-1  cursor-pointer">
+        <div className="border border-gray-700 bg-githublight hover:bg-gray-700 rounded  px-3 py-1  hidden lg:flex items-center space-x-1  cursor-pointer">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-4 w-4"
@@ -75,7 +75,7 @@ const Stats = () => {
             />
           </svg>
         </div>
-        <div className="border text-gray-500 border-gray-700 bg-githublight hover:bg-gray-700 rounded  px-3 py-1  flex items-center space-x-2 cursor-pointer">
+        <div className="border text-gray-500 border-gray-700 bg-githublight hover:bg-gray-700 rounded  px-3 py-1  hidden lg:flex items-center space-x-2 cursor-pointer">
           <svg
             aria-hidden="true"
             className="h-4 w-4 fill-current"
@@ -88,7 +88,7 @@ const Stats = () => {
             0
           </span>
         </div>
-        <div className="border text-gray-400 border-gray-700 bg-githublight hover:bg-gray-700 rounded flex items-center cursor-pointer ">
+        <div className="border text-gray-400 border-gray-700 bg-githublight hover:bg-gray-700 rounded hidden lg:flex items-center cursor-pointer ">
           <div className="flex px-3 items-center space-x-2  py-1 ">
             <svg
               className="h-4 w-4 fill-current mr-1"
@@ -119,6 +119,47 @@ const Stats = () => {
             </svg>
           </div>
         </div>
+      </div>
+      <div className="mt-4 flex flex-col lg:hidden">
+        <div>
+          <p className="text-lg text-gray-300">
+            A Github clone built using tailwindcss
+          </p>
+        </div>
+        <ul className="mt-4 flex">
+          <li className="mr-3">
+            <a
+              href="/"
+              className="space-x-1 flex items-center text-gray-400 hover:underline hover:text-blue-400"
+            >
+              <svg
+                className="h-4 w-4 fill-current mr-1"
+                viewBox="0 0 16 16"
+                version="1.1"
+              >
+                <path d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path>
+              </svg>
+              <span>0</span>
+              <span>Stars</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="/"
+              className="space-x-1 flex items-center text-gray-400 hover:underline hover:text-blue-400"
+            >
+              <svg
+                aria-hidden="true"
+                className="h-4 w-4 fill-current"
+                viewBox="0 0 16 16"
+              >
+                <path d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"></path>
+              </svg>
+              <span>0</span>
+              <span>forks</span>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import React from "react";
 
 const Tabs = () => {
   return (
-    <ul className="flex items-center px-6 mt-4  border-b border-gray-500 text-gray-100">
+    <ul className="flex relative items-center px-6 mt-4  border-b border-gray-500 text-gray-100">
       <li className="font-semibold">
         <a
           href="/"
@@ -45,7 +45,7 @@ const Tabs = () => {
           <span className="ml-2 font-light">Pull requests</span>
         </a>
       </li>
-      <li className="font-semibold text-gray-400">
+      <li className="font-semibold text-gray-400 hidden lg:flex">
         <a
           href="/"
           className="flex items-center px-4 pb-3 border-b border-transparent  hover:border-gray-500 transition ease-in-out duration-150"
@@ -56,7 +56,7 @@ const Tabs = () => {
           <span className="ml-2 font-light">Actions</span>
         </a>
       </li>
-      <li className="font-semibold text-gray-400">
+      <li className="font-semibold text-gray-400 hidden lg:flex">
         <a
           href="/"
           className="flex items-center px-4 pb-3 border-b border-transparent  hover:border-gray-500 transition ease-in-out duration-150"
@@ -67,7 +67,7 @@ const Tabs = () => {
           <span className="ml-2 font-light">Projects</span>
         </a>
       </li>
-      <li className="font-semibold text-gray-400">
+      <li className="font-semibold text-gray-400 hidden lg:flex">
         <a
           href="/"
           className="flex items-center px-4 pb-3 border-b border-transparent  hover:border-gray-500 transition ease-in-out duration-150"
@@ -78,7 +78,7 @@ const Tabs = () => {
           <span className="ml-2 font-light">Wiki</span>
         </a>
       </li>
-      <li className="font-semibold text-gray-400">
+      <li className="font-semibold text-gray-400 hidden lg:flex">
         <a
           href="/"
           className="flex items-center px-4 pb-3 border-b border-transparent  hover:border-gray-500 transition ease-in-out duration-150"
@@ -89,7 +89,7 @@ const Tabs = () => {
           <span className="ml-2 font-light">Security</span>
         </a>
       </li>
-      <li className="font-semibold text-gray-400">
+      <li className="font-semibold text-gray-400 hidden lg:flex">
         <a
           href="/"
           className="flex items-center px-4 pb-3 border-b border-transparent  hover:border-gray-500 transition ease-in-out duration-150"
@@ -100,7 +100,7 @@ const Tabs = () => {
           <span className="ml-2 font-light">Insight</span>
         </a>
       </li>
-      <li className="font-semibold text-gray-400">
+      <li className="font-semibold text-gray-400 hidden lg:flex">
         <a
           href="/"
           className="flex items-center px-4 pb-3 border-b border-transparent  hover:border-gray-500 transition ease-in-out duration-150"
@@ -110,6 +110,9 @@ const Tabs = () => {
           </svg>
           <span className="ml-2 font-light">Settings</span>
         </a>
+      </li>
+      <li className="h-4 w-4 flex justify-center items-center -translate-y-1  text-xl text-gray-500 lg:hidden absolute right-0 top-0 mr-3 f-full">
+        ...
       </li>
     </ul>
   );

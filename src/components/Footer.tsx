@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="flex container mx-auto px-4 items-center justify-between text-xs border-t border-gray-700 mt-5 ">
+    <div className=" hidden lg:flex container mx-auto px-4 items-center justify-between text-xs border-t border-gray-700 mt-5 ">
       <ul className="flex items-center space-x-10 py-8">
         <li className="flex items-center mr-6 text-gray-500">
           <svg className="h-6 w-6 mr-2 fill-current" viewBox="0 0 16 16">

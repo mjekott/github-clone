@@ -2,8 +2,8 @@ import React from "react";
 
 const Sidebar = () => {
   return (
-    <div className="text-gray-300 flex flex-col">
-      <div className="flex justify-between mb-3">
+    <div className="text-gray-300 flex flex-col mb-10 lg:mb-0">
+      <div className="hidden lg:flex  justify-between mb-3">
         <h4 className="text-base font-semibold ">About</h4>
         <svg
           className="h-4 w-4 text-gray-500 cursor-pointer hover:text-blue-500 fill-current"
@@ -15,8 +15,10 @@ const Sidebar = () => {
           ></path>
         </svg>
       </div>
-      <div className="text-base">A Github clone built using tailwindcss</div>
-      <ul className="mt-4 text-gray-500 space-y-3 font-semibold">
+      <div className="text-base hidden lg:flex">
+        A Github clone built using tailwindcss
+      </div>
+      <ul className="mt-4 text-gray-500 space-y-3 font-semibold hidden lg:flex flex-col ">
         <li className="flex items-center">
           <svg
             className="fill-current w-4 h-4 mr-3 text-gray-300"

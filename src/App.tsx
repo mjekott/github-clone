@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="text-gray-900 bg-githubdark text-sm antialiased  min-h-screen">
+    <div className="text-gray-900 bg-githubdark text-sm antialiased  min-h-screen overflow-hidden">
       <Header />
       <Stats />
       <Tabs />
