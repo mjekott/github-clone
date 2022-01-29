@@ -2,7 +2,7 @@
 
 ## Description
 
-a github-clone built with tailwind css
+a github-clone built with tailwind css and react
 
 ## Installation
 

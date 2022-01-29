@@ -123,7 +123,7 @@ const Stats = () => {
       <div className="mt-4 flex flex-col lg:hidden">
         <div>
           <p className="text-lg text-gray-300">
-            A Github clone built using tailwindcss
+            A Github clone built using tailwindcss and react
           </p>
         </div>
         <ul className="mt-4 flex">

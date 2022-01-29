@@ -16,7 +16,7 @@ const Sidebar = () => {
         </svg>
       </div>
       <div className="text-base hidden lg:flex">
-        A Github clone built using tailwindcss
+        A Github clone built using tailwindcss and react
       </div>
       <ul className="mt-4 text-gray-500 space-y-3 font-semibold hidden lg:flex flex-col ">
         <li className="flex items-center">
