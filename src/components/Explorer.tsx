@@ -1,6 +1,7 @@
 import React from "react";
 import ExplorerFiles from "./ExplorerFiles";
 import Readme from "./Readme";
+import Sidebar from "./Sidebar";
 
 const Explorer = () => {
   return (
@@ -9,7 +10,9 @@ const Explorer = () => {
         <ExplorerFiles />
         <Readme />
       </div>
-      <div className="w-1/4"></div>
+      <div className="w-1/4">
+        <Sidebar />
+      </div>
     </div>
   );
 };
