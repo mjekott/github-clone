@@ -2,7 +2,7 @@ import React from "react";
 
 const Stats = () => {
   return (
-    <div className=" px-6 py-4 flex flex-col lg:flex lg:flex-row lg:items-center lg:justify-between">
+    <div className=" px-6 lg:py-4 py-1 flex flex-col lg:flex lg:flex-row lg:items-center lg:justify-between">
       <div className="flex">
         <svg
           aria-hidden="true"
@@ -120,7 +120,7 @@ const Stats = () => {
           </div>
         </div>
       </div>
-      <div className="mt-4 flex flex-col lg:hidden">
+      <div className="mt-1 flex flex-col lg:hidden">
         <div>
           <p className="text-lg text-gray-300">
             A Github clone built using tailwindcss and react
